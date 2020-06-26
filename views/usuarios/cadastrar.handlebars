@@ -1,0 +1,41 @@
+{{#each erros}}
+
+<div class="alert alert-danger" role="alert">{{Text}} </div>
+
+{{else}}
+{{/each}}
+
+<div class="d-flex justify-content-center ">
+ <div class"text-white mb-3" style="width: 25rem;" >
+
+    <div class="card-body text-white bg-dark">
+        <h1 class="text-center"><span>Criar Conta</span></h1>
+        <form action="/cadastro/cadastro/novo" method="POST">
+        <label for="nomme">Nome</label>
+        <input type="text" name="nomme" placeholder="Nome completo" class="form-control bg-white" required>
+        <label for="emmail">E-mail</label>
+        <input type="email" name="emmail" placeholder="E-mail" class="form-control bg-white" required>
+        <label for="sennha">Senha</label>
+        <input type="password" name="sennha" placeholder="Senha" class="form-control bg-white" required>
+        <label for="sennha2">Digite de novo</label>
+        <input type="password" name="sennha2" placeholder="Senha" class="form-control bg-white" required>
+        <br>
+        <button tipe="submit" class="btn btn-white">Cadastrar</button>
+        <a href="/"><input type="button" value="Voltar" class="btn btn-white"></a>
+
+        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+        <label class="btn btn-secondary active">
+            <input type="radio" name="options" id="option1"  value="usuario" checked > usuario
+        </label>
+        <label class="btn btn-secondary">
+            <input type="radio" name="options" id="option2"  value="adm"> adm
+        </label>
+        
+        </div>
+        </form>
+        
+    </div>
+    
+</div>
+</div>
+</div>

@@ -1,0 +1,71 @@
+
+body{
+    background-image: url("./blue-gradient-background-blue-420939386.jpg");
+}
+.menu{
+    display: flex;
+    height: 700px;
+    
+    flex-direction: row;
+}
+.div1{
+    flex: 1;
+    
+}
+.div2{
+    flex: 20;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(39, 39, 39, 0.40);
+    justify-content: center;
+    align-items: center;
+
+    
+}
+
+
+.div3{
+    flex: 1;
+    
+}
+
+.divF{
+    margin: 20px;
+}
+
+
+.divTitulo{
+    color: white;
+    margin: 30px;
+    text-align: center;
+    
+}
+
+
+.divm1{
+    width: 300px;
+    margin: 7px;    
+    
+}
+.divm2{
+    width: 300px;
+    margin: 7px;
+    
+}
+.divm3{
+    width: 300px;
+    margin: 7px;
+    
+}
+.divm4{
+    width: 300px;
+    margin: 7px;
+    
+}
+
+
+.table{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4);
+    font-size: 12px;
+}

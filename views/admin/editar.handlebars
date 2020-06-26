@@ -1,0 +1,26 @@
+{{#each erros}}
+
+<div class="alert alert-danger" role="alert">{{Text}} </div>
+
+{{else}}
+
+{{/each}}
+
+
+<h3>Editar cadastro de usuario</h3>
+<div class="tab">
+        <div class="">
+
+        <form action="/editar/alterar" method="POST">
+            <input type="hidden" name="_id" value="{{editar.id}}">
+            <label for="nome">Nome</label>
+            <input type="text" value="{{editar.nome}}" name= "nomme" class="form-control" required>
+            <label for="">E-mail</label>
+            <input type="email" value="{{editar.email}}" name= "emmail"   class="form-control" required>
+            <label for="nome">Senha</label>
+            <input type="password" name="sennha" value="{{editar.senha}}" class="form-control" required>
+            <br>
+            <button tipe="sumit" class="btn btn-dark">Salvar</button>
+        </form>
+    </div>
+</div>
