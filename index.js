@@ -57,6 +57,7 @@ const auth = require("./helpers/adm")
             app.get('/',function(req,res){
 
                 res.render('usuarios/login')
+                
 
             })
 
