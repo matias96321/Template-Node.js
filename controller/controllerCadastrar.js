@@ -78,11 +78,11 @@ cadastro.get('/',function(req,res){
                       
                       //Insert no banco
                       formulario.save().then(function(){
-                        req.flash("success_msg", "Contra realiza com sucesso")
-                        res.redirect('/login')
+                        req.flash("success_msg", "Contra criada com sucesso")
+                        res.redirect('/')
                         
                       }).catch(function(erro){
-                        req.flash("error_msg","Erro ao realizar conta")
+                        req.flash("error_msg","Erro ao criar conta")
                         res.redirect('/cadastrar')
 
                       })
