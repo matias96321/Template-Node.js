@@ -57,12 +57,13 @@ const auth = require("./helpers/adm")
             app.get('/',function(req,res){
 
                 res.render('usuarios/login')
-                
+
 
             })
 
             app.get('/home',auth.user,function(req,res){
 
+                    
                 res.render('index')
 
             })

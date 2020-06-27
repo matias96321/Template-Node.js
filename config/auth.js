@@ -21,16 +21,14 @@ module.exports = function(passport){
             }
 
 
-            console.log(email);
-            console.log(password);
             
             bcrypt.compare(password, usuarios.senha, (erro,batem) => {
 
                 if(batem){
-                    console.log("funfa");
+                    
                     return done(null,usuarios)
                 }else{
-                    console.log("erro");
+                    
                     
                     return done(null,false,{message: "Senha incorreta"})
                 }
@@ -43,7 +41,7 @@ module.exports = function(passport){
     }))
 
     passport.serializeUser(function(usuarios ,done){
-        console.log("id");
+        
         done(null, usuarios.id);
 
     });
@@ -53,6 +51,7 @@ module.exports = function(passport){
         usuario.findOne({where:{id: id}}).then(function(usuarios){
             done(null, usuarios)}).catch(function(erro){
                 done(erro, null)
+                
             })
            
         });
