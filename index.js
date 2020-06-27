@@ -63,8 +63,8 @@ const auth = require("./helpers/adm")
 
             app.get('/home',auth.user,function(req,res){
 
-                    
-                res.render('index')
+
+                res.render('index',{adm: req.user.adm})
 
             })
 
