@@ -1,4 +1,4 @@
-# Template Node.js + HandleBars
+# Template Node.js + HandleBars (MVC)
 
 *Explanation*
 
