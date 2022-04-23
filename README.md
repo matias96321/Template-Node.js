@@ -1,8 +1,8 @@
-# Template node js(Api's) backend + frontend(handlebars)
+# Template Node.js + HandleBars
 
 *Explanation*
 
-to use when creating a simple api, shortens the steps.
+Template with simple and initial settings to start a quick project
 
 ***technology***
 
